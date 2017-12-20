@@ -1,4 +1,9 @@
-<form [formGroup]="searchForm">
-  <label for="search">Search</label><br>
-  <input id='search' type="text" placeholder="Search..." formControlName="search">
-</form>
+<div>
+  <form [formGroup]="searchForm">
+    <label for="search">Search Employee by Name</label><br>
+    <input id='search' type="text" placeholder="Search..." formControlName="search">
+  </form>
+  <ul>
+    <li *ngFor="let employee of filteredEmployees">{{ employee.name }} - ages: {{ employee.age }}</li>
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    margin-top: 20px;
+}
